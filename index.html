@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marketing FM — The 5-Year Partnership Pathway</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Karla:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f7f4ef;
+  --bg2: #edeae3;
+  --bg3: #e3dfd6;
+  --ink: #1a1916;
+  --ink2: #4a4843;
+  --ink3: #8a8780;
+  --gold: #c8922a;
+  --gold-dim: rgba(200,146,42,0.1);
+  --gold-border: rgba(200,146,42,0.25);
+  --teal: #1a7a5e;
+  --teal-dim: rgba(26,122,94,0.08);
+  --teal-border: rgba(26,122,94,0.22);
+  --rust: #b84c2a;
+  --rust-dim: rgba(184,76,42,0.08);
+  --navy: #1e3a5f;
+  --navy-dim: rgba(30,58,95,0.08);
+  --border: rgba(26,25,22,0.1);
+  --border2: rgba(26,25,22,0.18);
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Karla', sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page { max-width: 860px; margin: 0 auto; padding: 0 28px 120px; }
+
+/* HERO */
+.hero {
+  padding: 80px 0 64px;
+  border-bottom: 1px solid var(--border2);
+  position: relative;
+}
+.hero-eyebrow {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hero-eyebrow::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--gold-border);
+  max-width: 120px;
+}
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(38px, 6vw, 64px);
+  font-weight: 900;
+  line-height: 1.05;
+  color: var(--ink);
+  margin-bottom: 16px;
+  letter-spacing: -0.01em;
+}
+.hero h1 em {
+  font-style: italic;
+  color: var(--gold);
+}
+.hero-deck {
+  font-size: 17px;
+  color: var(--ink2);
+  max-width: 580px;
+  line-height: 1.65;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 0;
+  width: fit-content;
+  border: 1px solid var(--border2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.hero-stat {
+  padding: 14px 20px;
+  border-right: 1px solid var(--border);
+  text-align: center;
+}
+.hero-stat:last-child { border-right: none; }
+.hero-stat-val {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--ink);
+  display: block;
+}
+.hero-stat-lbl {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink3);
+  display: block;
+  margin-top: 2px;
+}
+
+/* PREMISE */
+.premise {
+  padding: 48px 0;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 64px;
+}
+.premise-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1px;
+  background: var(--border2);
+  border: 1px solid var(--border2);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 28px;
+}
+.premise-col {
+  background: var(--bg);
+  padding: 22px 20px;
+}
+.premise-col-label {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink3);
+  margin-bottom: 8px;
+}
+.premise-col-title {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+.premise-col-body {
+  font-size: 13px;
+  color: var(--ink2);
+  line-height: 1.6;
+}
+.premise-col.highlight { background: var(--gold-dim); }
+.premise-col.highlight .premise-col-title { color: var(--gold); }
+
+/* SECTION */
+.section { margin-bottom: 80px; }
+.section-rule {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 36px;
+}
+.section-rule-num {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink3);
+  flex-shrink: 0;
+}
+.section-rule-line {
+  flex: 1;
+  height: 1px;
+  background: var(--border2);
+}
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(24px, 3vw, 34px);
+  font-weight: 900;
+  color: var(--ink);
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+.section-sub {
+  font-size: 14px;
+  color: var(--ink3);
+  font-style: italic;
+  margin-bottom: 28px;
+}
+
+/* YEAR BLOCKS */
+.year-block {
+  margin-bottom: 48px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid var(--border);
+}
+.year-block:last-child { border-bottom: none; }
+.year-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+.year-label {
+  font-family: var(--font-display);
+  font-size: 48px;
+  font-weight: 900;
+  color: var(--bg3);
+  line-height: 1;
+  flex-shrink: 0;
+  letter-spacing: -0.03em;
+  user-select: none;
+}
+.year-meta { flex: 1; }
+.year-title {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+.year-theme {
+  font-size: 13px;
+  color: var(--ink3);
+  font-style: italic;
+}
+.year-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.year-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px 18px;
+}
+.year-card-label {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--ink3);
+  margin-bottom: 6px;
+}
+.year-card-title {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 5px;
+}
+.year-card-body {
+  font-size: 13px;
+  color: var(--ink2);
+  line-height: 1.6;
+}
+.year-card.gold { border-color: var(--gold-border); background: var(--gold-dim); }
+.year-card.teal { border-color: var(--teal-border); background: var(--teal-dim); }
+.year-card.rust { border-color: rgba(184,76,42,0.2); background: var(--rust-dim); }
+.year-card.navy { border-color: rgba(30,58,95,0.18); background: var(--navy-dim); }
+.year-card.gold .year-card-label { color: var(--gold); }
+.year-card.teal .year-card-label { color: var(--teal); }
+.year-card.rust .year-card-label { color: var(--rust); }
+.year-card.navy .year-card-label { color: var(--navy); }
+.year-card.full { grid-column: 1 / -1; }
+
+.milestone-list { display: flex; flex-direction: column; gap: 0; }
+.milestone {
+  display: flex;
+  gap: 14px;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--border);
+  align-items: flex-start;
+}
+.milestone:last-child { border-bottom: none; }
+.milestone-dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--gold);
+  flex-shrink: 0;
+  margin-top: 8px;
+}
+.milestone-dot.teal { background: var(--teal); }
+.milestone-dot.rust { background: var(--rust); }
+.milestone-dot.navy { background: var(--navy); }
+.milestone-text {
+  font-size: 13.5px;
+  color: var(--ink2);
+  line-height: 1.6;
+}
+.milestone-text strong { color: var(--ink); font-weight: 500; }
+
+/* PARTNER PROFILES */
+.partner-block {
+  background: var(--bg);
+  border: 1px solid var(--border2);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+.partner-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 22px;
+  background: var(--bg2);
+  border-bottom: 1px solid var(--border);
+}
+.partner-icon {
+  width: 36px; height: 36px;
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+.partner-name {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--ink);
+}
+.partner-type {
+  font-size: 12px;
+  color: var(--ink3);
+  margin-top: 1px;
+}
+.partner-year {
+  margin-left: auto;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 4px;
+  background: var(--gold-dim);
+  color: var(--gold);
+  border: 1px solid var(--gold-border);
+}
+.partner-body { padding: 18px 22px; }
+.partner-body p {
+  font-size: 14px;
+  color: var(--ink2);
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+.partner-body p:last-child { margin-bottom: 0; }
+.partner-pathway {
+  background: var(--bg2);
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-top: 12px;
+}
+.partner-pathway-label {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--ink3);
+  margin-bottom: 8px;
+}
+.partner-step {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 6px;
+  align-items: flex-start;
+}
+.partner-step:last-child { margin-bottom: 0; }
+.partner-step-num {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--ink3);
+  width: 20px;
+  flex-shrink: 0;
+  padding-top: 2px;
+}
+.partner-step-text {
+  font-size: 13px;
+  color: var(--ink2);
+  line-height: 1.55;
+}
+.partner-step-text strong { color: var(--ink); font-weight: 500; }
+
+/* NUMBERS */
+.numbers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 24px;
+}
+.number-card {
+  border: 1px solid var(--border2);
+  border-radius: 10px;
+  padding: 18px 16px;
+  text-align: center;
+  background: var(--bg);
+}
+.number-val {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--ink);
+  display: block;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.number-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--ink3);
+  display: block;
+}
+
+/* CALLOUT */
+.callout {
+  border-left: 3px solid var(--gold);
+  background: var(--gold-dim);
+  border-radius: 0 8px 8px 0;
+  padding: 16px 20px;
+  margin: 20px 0;
+}
+.callout p { font-size: 14px; color: var(--ink2); line-height: 1.65; }
+.callout p strong { color: var(--ink); font-weight: 500; }
+.callout.teal { border-color: var(--teal); background: var(--teal-dim); }
+.callout.rust { border-color: var(--rust); background: var(--rust-dim); }
+.callout.navy { border-color: var(--navy); background: var(--navy-dim); }
+
+/* TRUTH TABLE */
+.truth-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 13.5px;
+}
+.truth-table th {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 10px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--ink3);
+  text-align: left;
+  padding: 10px 14px;
+  border-bottom: 2px solid var(--border2);
+  background: var(--bg2);
+}
+.truth-table td {
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--border);
+  color: var(--ink2);
+  vertical-align: top;
+  line-height: 1.55;
+}
+.truth-table td:first-child { font-weight: 500; color: var(--ink); }
+.truth-table tr:last-child td { border-bottom: none; }
+
+/* DIVIDER */
+hr { border: none; border-top: 1px solid var(--border); margin: 64px 0; }
+
+/* FOOTER */
+.footer {
+  padding-top: 28px;
+  border-top: 1px solid var(--border2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.footer-brand {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink3);
+}
+.footer-note { font-size: 12px; color: var(--ink3); }
+
+/* TAG */
+.tag {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.tag-gold { background: var(--gold-dim); color: var(--gold); border: 1px solid var(--gold-border); }
+.tag-teal { background: var(--teal-dim); color: var(--teal); border: 1px solid var(--teal-border); }
+.tag-rust { background: var(--rust-dim); color: var(--rust); border: 1px solid rgba(184,76,42,0.2); }
+.tag-navy { background: var(--navy-dim); color: var(--navy); border: 1px solid rgba(30,58,95,0.18); }
+
+/* ANIMATE */
+@media (prefers-reduced-motion: no-preference) {
+  .year-block, .partner-block, .section {
+    opacity: 0;
+    transform: translateY(12px);
+    animation: rise 0.45s ease forwards;
+  }
+  .year-block:nth-child(1) { animation-delay: 0.05s; }
+  .year-block:nth-child(2) { animation-delay: 0.1s; }
+  .year-block:nth-child(3) { animation-delay: 0.15s; }
+  .year-block:nth-child(4) { animation-delay: 0.2s; }
+  .year-block:nth-child(5) { animation-delay: 0.25s; }
+  .partner-block:nth-child(1) { animation-delay: 0.05s; }
+  .partner-block:nth-child(2) { animation-delay: 0.1s; }
+  .partner-block:nth-child(3) { animation-delay: 0.15s; }
+  .partner-block:nth-child(4) { animation-delay: 0.2s; }
+  .partner-block:nth-child(5) { animation-delay: 0.25s; }
+  @keyframes rise { to { opacity: 1; transform: none; } }
+}
+
+@media (max-width: 600px) {
+  .premise-grid { grid-template-columns: 1fr; }
+  .year-grid { grid-template-columns: 1fr; }
+  .numbers-grid { grid-template-columns: 1fr 1fr; }
+  .hero-stats { grid-template-columns: repeat(3, 1fr); }
+  .hero-stat:nth-child(4),
+  .hero-stat:nth-child(5) { border-top: 1px solid var(--border); }
+  .hero-stat:nth-child(3) { border-right: none; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-eyebrow">Marketing FM — Internal Strategic Document</div>
+  <h1>The <em>Five-Year</em><br>Partnership Pathway</h1>
+  <p class="hero-deck">How a solo 18-year-old founder in Juja builds the body of work that earns a seat at the table with Anthropic, Notion, Google, Alex Hormozi, and Rory Sutherland — by Year 5.</p>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <span class="hero-stat-val">5</span>
+      <span class="hero-stat-lbl">Targets</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-val">3</span>
+      <span class="hero-stat-lbl">Arms</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-val">Y1–Y5</span>
+      <span class="hero-stat-lbl">Timeline</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-val">1</span>
+      <span class="hero-stat-lbl">Mission</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-val">Now</span>
+      <span class="hero-stat-lbl">Start</span>
+    </div>
+  </div>
+</div>
+
+<!-- PREMISE -->
+<div class="premise">
+  <div class="section-title" style="margin-bottom:8px;">The honest premise</div>
+  <p style="font-size:15px; color:var(--ink2); max-width:640px; line-height:1.7;">Nobody gives partnerships. They are earned by building something the other party needs to be associated with. The pathway below is not about pitching these organisations. It is about becoming the kind of company they reach out to.</p>
+
+  <div class="premise-grid">
+    <div class="premise-col">
+      <div class="premise-col-label">The arm</div>
+      <div class="premise-col-title">Media</div>
+      <div class="premise-col-body">Podcast, daily content, newsletter, live events. Builds the audience. Earns public credibility. Gets Rory Sutherland's attention.</div>
+    </div>
+    <div class="premise-col">
+      <div class="premise-col-label">The arm</div>
+      <div class="premise-col-title">Tools</div>
+      <div class="premise-col-body">Free Google Sheets, paid SaaS systems built on Anthropic's API and Notion's platform. This is the technical integration story for Anthropic and Notion.</div>
+    </div>
+    <div class="premise-col highlight">
+      <div class="premise-col-label">The arm</div>
+      <div class="premise-col-title">Education</div>
+      <div class="premise-col-body">Cohorts, certification, facilitator system. Measurable SME transformation. The data that gets Google and Hormozi to pay attention. 10,000 SMEs helped is the number.</div>
+    </div>
+  </div>
+
+  <div class="callout" style="margin-top:20px;">
+    <p><strong>The three-arm architecture is the right structure for this ambition.</strong> Each arm feeds a different partnership conversation simultaneously. You are not choosing between being a media company, a SaaS company, and an education company. You are building all three — and the partnership opportunities emerge from each arm at different points in the five years. The work is not to pitch. The work is to build each arm to a threshold where the pitch writes itself.</p>
+  </div>
+</div>
+
+<!-- YEAR BY YEAR -->
+<div class="section">
+  <div class="section-rule">
+    <div class="section-rule-num">Part I</div>
+    <div class="section-rule-line"></div>
+  </div>
+  <div class="section-title">Year by year</div>
+  <p class="section-sub">What needs to be built, by when, and why it matters for the partnerships.</p>
+
+  <!-- YEAR 1 -->
+  <div class="year-block">
+    <div class="year-header">
+      <div class="year-label">Y1</div>
+      <div class="year-meta">
+        <div class="year-title">Prove it is real</div>
+        <div class="year-theme">E-Myth stage: Infancy · No partnerships sought yet · Foundation only</div>
+      </div>
+    </div>
+
+    <div class="year-grid">
+      <div class="year-card gold">
+        <div class="year-card-label">The single goal</div>
+        <div class="year-card-title">Evidence over everything</div>
+        <div class="year-card-body">One documented client result. Twenty podcast episodes. Two thousand people who know Marketing FM exists. KSh 80k/month revenue. Nothing else matters in Year 1.</div>
+      </div>
+      <div class="year-card">
+        <div class="year-card-label">Why no partnerships yet</div>
+        <div class="year-card-title">You have nothing to offer them</div>
+        <div class="year-card-body">Anthropic, Notion, and Google partner with organisations that have users, data, and proof. In Year 1 you are building toward having those things. Approaching them now wastes the opportunity.</div>
+      </div>
+    </div>
+
+    <div class="milestone-list">
+      <div class="milestone">
+        <div class="milestone-dot"></div>
+        <div class="milestone-text"><strong>Candyvore completes and is documented.</strong> Full before/after case study published publicly. This is the first piece of proof. Everything is built on it.</div>
+      </div>
+      <div class="milestone">
+        <div class="milestone-dot teal"></div>
+        <div class="milestone-text"><strong>20 podcast episodes published.</strong> At least 5 must feature real SME stories — not just Karl's opinions. SME voices are the content that builds trust fastest.</div>
+      </div>
+      <div class="milestone">
+        <div class="milestone-dot"></div>
+        <div class="milestone-text"><strong>100k Leaks group reaches 200 members</strong> with consistent weekly engagement. Engagement rate matters more than member count. A group of 200 active people beats 2,000 silent ones.</div>
+      </div>
+      <div class="milestone">
+        <div class="milestone-dot teal"></div>
+        <div class="milestone-text"><strong>First two free tools published</strong> — the Customer Goldmine Sheet and the Credit and Debt Tracker — with real usage data. "Downloaded 400 times" is a sentence Notion and Anthropic respond to.</div>
+      </div>
+      <div class="milestone">
+        <div class="milestone-dot"></div>
+        <div class="milestone-text"><strong>KSh 80k/month revenue reached</strong> through coaching clients. This is the number that makes every subsequent conversation credible. It proves the model works.</div>
+      </div>
+      <div class="milestone">
+        <div class="milestone-dot rust"></div>
+        <div class="milestone-text"><strong>Begin writing publicly about behavioural economics in African SME context.</strong> This is the content thread that gets Rory Sutherland's attention. It starts in Year 1 as a LinkedIn or newsletter series.</div>
+      </div>
+    </div>
+
+    <div class="callout" style="margin-top:20px;">
+      <p><strong>The Year 1 cost:</strong> Mostly time, not money. The tools are Google Sheets. The podcast is recorded on a phone. The coaching is delivered on WhatsApp. The realistic cash spend is under KSh 30,000 for the full year — domain, basic branding, one paid tool for scheduling. The real cost is 6–8 hours of focused daily work, 7 days a week, for 12 months without visible results for the first 3–4 months.</p>
+    </div>
+  </div>
+
+  <!-- YEAR 2 -->
+  <div class="year-block">
+    <div class="year-header">
+      <div class="year-label">Y2</div>
+      <div class="year-meta">
+        <div class="year-title">Build the machine</div>
+        <div class="year-theme">E-Myth stage: Adolescence · First hires · First technical product · First external attention</div>
+      </div>
+    </div>
+
+    <div class="year-grid">
+      <div class="year-card teal">
+        <div class="year-card-label">The milestone that changes everything</div>
+        <div class="year-card-title">First tool built on Anthropic's API</div>
+        <div class="year-card-body">A paid SaaS tool for Kenyan SMEs — the Business X-Ray diagnostic — powered by Claude. Real users. Real data. This is the moment Marketing FM becomes a technology company, not just a coaching company.</div>
+      </div>
+      <div class="year-card">
+        <div class="year-card-label">The hire that enables everything</div>
+        <div class="year-card-title">One developer, one content creator</div>
+        <div class="year-card-body">The developer builds the API-powered tools. The content creator maintains the 3x/week posting cadence. Karl moves from Technician to Manager. This is the E-Myth transition that unlocks scale.</div>
+      </div>
+      <div class="year-card navy">
+        <div class="year-card-label">First Notion move</div>
+        <div class="year-card-title">Notion Certified Consultant</div>
+        <div class="year-card-body">Karl becomes a Notion Certified Consultant in Year 2. This costs time (the exam) and creates a credential that opens the formal partnership conversation. It also adds a consulting revenue stream immediately.</div>
+      </div>
+      <div class="year-card">
+        <div class="year-card-label">Education arm launches</div>
+        <div class="year-card-title">First paid cohort — 20 SMEs</div>
+        <div class="year-card-body">6-month cohort. Curriculum built on the Hormozi Scaling Roadmap. KSh 25,000 per participant. 20 participants = KSh 500,000 per cohort. Two cohorts per year = KSh 1M from education alone.</div>
+      </div>
+    </div>
+
+    <div class="milestone-list">
+      <div class="milestone">
+        <div class="milestone-dot teal"></div>
+        <div class="milestone-text"><strong>Apply for Anthropic's API partner programme.</strong> By Year 2 you have a live tool built on their API with paying users. That application now has substance. Without users it is just an email.</div>
+      </div>
+      <div class="milestone">
+        <div class="milestone-dot navy"></div>
+        <div class="milestone-text"><strong>Submit first Notion template to the Template Gallery.</strong> Free templates with thousands of downloads are the evidence Notion's partnership team asks for. One excellent, well-branded template beats ten mediocre ones.</div>
+      </div>
+      <div class="milestone">
+        <div class="milestone-dot"></div>
+        <div class="milestone-text"><strong>Audience reaches 10,000 combined across all platforms.</strong> This is the threshold at which sponsorship conversations become realistic and media credibility becomes real.</div>
+      </div>
+      <div class="milestone">
+        <div class="milestone-dot rust"></div>
+        <div class="milestone-text"><strong>Publish the first piece of original research.</strong> "How 50 Kenyan SMEs think about customer data" — a real study with real numbers. This is what Rory Sutherland responds to. Opinions are common. Data about human behaviour is rare.</div>
+      </div>
+      <div class="milestone">
+        <div class="milestone-dot"></div>
+        <div class="milestone-text"><strong>Revenue reaches KSh 400,000/month.</strong> The breakdown: KSh 200k from coaching, KSh 100k from cohort, KSh 100k from tools subscriptions. Each stream is independently viable. That diversification is what makes the business defensible.</div>
+      </div>
+    </div>
+
+    <div class="callout teal">
+      <p><strong>Year 2 cost estimate:</strong> KSh 150,000–300,000. The developer is the biggest cost — budget KSh 50,000–80,000/month for a junior developer working part-time on the tools. Content creator at KSh 20,000–30,000/month. Notion certification fee approximately $200 USD. API costs from Anthropic scale with usage — budget KSh 15,000/month at early stage. Total: approximately KSh 180,000–250,000 across the year in direct costs, offset by the revenue growth.</p>
+    </div>
+  </div>
+
+  <!-- YEAR 3 -->
+  <div class="year-block">
+    <div class="year-header">
+      <div class="year-label">Y3</div>
+      <div class="year-meta">
+        <div class="year-title">Cross the border</div>
+        <div class="year-theme">E-Myth stage: Beyond the comfort zone · East Africa · First formal partnership conversations</div>
+      </div>
+    </div>
+
+    <div class="year-grid">
+      <div class="year-card gold">
+        <div class="year-card-label">The threshold year</div>
+        <div class="year-card-title">1,000 SaaS users</div>
+        <div class="year-card-body">One thousand paying users of the Marketing FM tool suite — built on Anthropic's API, managed through Notion, serving Kenyan and East African SMEs. This is the number that triggers real partnership interest from both companies.</div>
+      </div>
+      <div class="year-card teal">
+        <div class="year-card-label">Google enters the picture</div>
+        <div class="year-card-title">Apply to Google for Startups Africa</div>
+        <div class="year-card-body">With 1,000 SMEs served, a growing team, and measurable job creation data, Marketing FM qualifies for Google for Startups Africa. This programme gives cloud credits, mentorship, and the Google badge — which opens every subsequent door.</div>
+      </div>
+      <div class="year-card full">
+        <div class="year-card-label">The integration vision becomes real</div>
+        <div class="year-card-title">Claude + Notion + Marketing FM — the three-way product</div>
+        <div class="year-card-body">By Year 3, the product Karl imagined is buildable: SMEs use Marketing FM's dashboard (built on Notion's API) with Claude embedded as the intelligence layer — answering questions about their business data, generating their weekly content, analysing their customer list. This is not theoretical. It is a technical integration that Karl's developer can build in Year 2–3. The partnership conversations with Anthropic and Notion are now about formalising something that already works and already has users.</div>
+      </div>
+    </div>
+
+    <div class="milestone-list">
+      <div class="milestone">
+        <div class="milestone-dot"></div>
+        <div class="milestone-text"><strong>Formal Anthropic partnership application submitted.</strong> Required evidence by this point: a live tool with 500+ monthly active users, measurable SME outcomes, and a public case study showing what the API enables. The application tells a story Anthropic's partnership team can repeat internally.</div>
+      </div>
+      <div class="milestone">
+        <div class="milestone-dot navy"></div>
+        <div class="milestone-text"><strong>Notion integration partner application submitted.</strong> Required: Notion Certified Consultant status (Year 2), a template with 5,000+ downloads, and a user community actively using Notion through Marketing FM's system. Notion's partner programme is application-based and selective — this is the right timeline.</div>
+      </div>
+      <div class="milestone">
+        <div class="milestone-dot rust"></div>
+        <div class="milestone-text"><strong>Rory Sutherland outreach — first contact.</strong> By Year 3, Marketing FM has published original research on behavioural economics in African SMEs. Send him the research directly on X or LinkedIn — not a pitch, a genuine intellectual contribution. "I thought this might interest you" with a link to the paper. His response rate to genuinely interesting ideas is high.</div>
+      </div>
+      <div class="milestone">
+        <div class="milestone-dot"></div>
+        <div class="milestone-text"><strong>Speak at one East African tech or business conference.</strong> Not as a keynote — as a panellist or breakout speaker. The goal is to be in rooms where Google for Startups programme managers are present. These decisions happen through relationship, not applications alone.</div>
+      </div>
+    </div>
+
+    <div class="callout navy">
+      <p><strong>Year 3 cost estimate:</strong> KSh 500,000–900,000 annually in direct operational costs. An 8-person team at various pay grades, East Africa expansion costs (Tanzania or Uganda market entry), conference travel, and accelerating API costs as the SaaS scales. Revenue at this stage should be KSh 1.5M/month — the business is self-funding its own expansion by Year 3. No external funding is required if Years 1 and 2 are executed correctly.</p>
+    </div>
+  </div>
+
+  <!-- YEAR 4 -->
+  <div class="year-block">
+    <div class="year-header">
+      <div class="year-label">Y4</div>
+      <div class="year-meta">
+        <div class="year-title">The brand becomes bigger than the founder</div>
+        <div class="year-theme">E-Myth stage: Maturity emerging · Pan-Africa entry · Partnerships active · 200,000 audience</div>
+      </div>
+    </div>
+
+    <div class="year-grid">
+      <div class="year-card gold">
+        <div class="year-card-label">Hormozi's attention threshold</div>
+        <div class="year-card-title">$1M+ ARR equivalent</div>
+        <div class="year-card-body">KSh 3M/month = approximately $23,000 USD/month = $276,000 ARR. Hormozi's content and community focuses on businesses at $1M–$10M ARR. At KSh 3M/month Marketing FM is at the lower edge of his radar. The way in is not a DM — it is being featured in content his team curates about African market growth.</div>
+      </div>
+      <div class="year-card">
+        <div class="year-card-label">What changes in Year 4</div>
+        <div class="year-card-title">Inbound replaces outbound</div>
+        <div class="year-card-body">By Year 4, if Years 1–3 are executed, Marketing FM is being written about — not just writing. Journalists, podcasters, and partner programmes begin approaching the business. This is the compounding effect of three years of public building.</div>
+      </div>
+    </div>
+
+    <div class="milestone-list">
+      <div class="milestone">
+        <div class="milestone-dot"></div>
+        <div class="milestone-text"><strong>Anthropic and Notion partnerships formalised.</strong> Co-branded case studies published. Marketing FM appears in Anthropic's partner directory and Notion's consultant listings for East Africa. Both companies gain what they need — African market penetration data and a proof point for SME use cases.</div>
+      </div>
+      <div class="milestone">
+        <div class="milestone-dot teal"></div>
+        <div class="milestone-text"><strong>Google for Startups Africa active.</strong> Cloud credits reduce SaaS infrastructure costs. The Google badge accelerates enterprise sales to larger Kenyan businesses. Google gains a documented SME digitisation story for their Africa narrative.</div>
+      </div>
+      <div class="milestone">
+        <div class="milestone-dot rust"></div>
+        <div class="milestone-text"><strong>Rory Sutherland conversation has happened.</strong> Not a meeting — an ongoing intellectual exchange. He may have cited Marketing FM's research in a talk or written about it. The goal was never a formal partnership with Ogilvy. It was a relationship with someone whose thinking shaped the business.</div>
+      </div>
+      <div class="milestone">
+        <div class="milestone-dot navy"></div>
+        <div class="milestone-text"><strong>Marketing FM appears in Hormozi-adjacent content.</strong> An Acquisition.com podcast episode, a mention in one of his YouTube videos, or a feature in his newsletter. These happen when the business is genuinely interesting — not when someone pitches it.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- YEAR 5 -->
+  <div class="year-block">
+    <div class="year-header">
+      <div class="year-label">Y5</div>
+      <div class="year-meta">
+        <div class="year-title">The mature institution</div>
+        <div class="year-theme">E-Myth stage: Maturity · Karl is free · The company runs the company</div>
+      </div>
+    </div>
+
+    <div class="year-grid">
+      <div class="year-card gold">
+        <div class="year-card-label">The Year 5 state</div>
+        <div class="year-card-title">500k audience · 15k SaaS users · 3,000 SMEs certified · KSh 8M+/month</div>
+        <div class="year-card-body">These are the numbers in the workspace. At these numbers, the partnership conversations have already happened. The meetings with Hormozi and Sutherland have already happened. Year 5 is not the year you earn the partnerships — it is the year the partnerships are bearing fruit.</div>
+      </div>
+      <div class="year-card teal">
+        <div class="year-card-label">What the meetings look like</div>
+        <div class="year-card-title">Invited, not applying</div>
+        <div class="year-card-body">By Year 5, if the plan is executed, Karl is invited to speak at Acquisition.com events as a case study of African market growth using Hormozi's frameworks. Rory Sutherland cites Marketing FM's research in a book or major talk. These are not applications. They are consequences.</div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <p><strong>The Year 5 revenue breakdown projection:</strong> KSh 3M from SaaS subscriptions (15,000 users at KSh 200/month average). KSh 2.5M from education (cohorts + certification). KSh 1.5M from sponsorships and media. KSh 1M from enterprise consulting. Total: KSh 8M/month. This is self-funded from Year 1's coaching revenue compounding through each year's reinvestment.</p>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- PARTNER PROFILES -->
+<div class="section">
+  <div class="section-rule">
+    <div class="section-rule-num">Part II</div>
+    <div class="section-rule-line"></div>
+  </div>
+  <div class="section-title">Each partnership in full</div>
+  <p class="section-sub">What each organisation needs, what you offer them, and the exact steps to get there.</p>
+
+  <!-- ANTHROPIC -->
+  <div class="partner-block">
+    <div class="partner-header">
+      <div class="partner-icon" style="background:#f0ede6; font-size:20px;">🤖</div>
+      <div>
+        <div class="partner-name">Anthropic — Claude</div>
+        <div class="partner-type">Integration partner · API-powered SME tools</div>
+      </div>
+      <div class="partner-year">Year 2–3</div>
+    </div>
+    <div class="partner-body">
+      <p>Anthropic wants to show that Claude's API is creating real economic value in underserved markets. A Kenyan SME platform built on their API — with measurable business outcomes — is exactly the kind of story their partnership and policy teams need for African market credibility, press coverage, and investor narratives.</p>
+      <p>What you offer them: a documented use case of Claude enabling 1,000+ African micro-businesses to operate more intelligently, with published outcome data. That is not something they have. You build it. They associate with it.</p>
+      <div class="partner-pathway">
+        <div class="partner-pathway-label">The exact steps</div>
+        <div class="partner-step"><div class="partner-step-num">01</div><div class="partner-step-text"><strong>Year 1:</strong> Get an Anthropic API key. Build the first tool using Claude — the Business X-Ray diagnostic. Even a simple implementation counts. Document it publicly.</div></div>
+        <div class="partner-step"><div class="partner-step-num">02</div><div class="partner-step-text"><strong>Year 2:</strong> Reach 200 monthly active users on the API-powered tool. Apply to Anthropic's startup programme (currently called Anthropic for Startups). It gives API credits, which reduces your costs significantly.</div></div>
+        <div class="partner-step"><div class="partner-step-num">03</div><div class="partner-step-text"><strong>Year 2–3:</strong> Publish a case study: "How Marketing FM uses Claude to help Kenyan SMEs diagnose their business in 15 minutes." Submit it to Anthropic's team directly. Tag them publicly when it goes live.</div></div>
+        <div class="partner-step"><div class="partner-step-num">04</div><div class="partner-step-text"><strong>Year 3:</strong> Apply for Anthropic's formal partner programme with 500+ active users, a published case study, and measurable outcomes. The application is now a formality — the relationship has been built through usage and content.</div></div>
+        <div class="partner-step"><div class="partner-step-num">05</div><div class="partner-step-text"><strong>Year 3–4:</strong> Co-branded content — "Claude-powered tools for African SMEs" — appears on both Marketing FM's channels and Anthropic's. This is the partnership made visible.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NOTION -->
+  <div class="partner-block">
+    <div class="partner-header">
+      <div class="partner-icon" style="background:#f0ede6; font-size:20px;">📋</div>
+      <div>
+        <div class="partner-name">Notion</div>
+        <div class="partner-type">Integration partner · Template creator · Certified consultant</div>
+      </div>
+      <div class="partner-year">Year 2–3</div>
+    </div>
+    <div class="partner-body">
+      <p>Notion wants to grow in emerging markets — Africa specifically represents a massive untapped user base of exactly the kind of knowledge workers and small business owners who benefit most from Notion's product. Marketing FM is the natural distribution channel for that growth because it already owns the relationship with the audience Notion wants.</p>
+      <p>What you offer them: an active community of East African SME owners who use Notion as their business operating system — because Marketing FM built that system for them, teaches it through cohorts, and certifies people in it. Notion gains market penetration without building a sales team in Africa.</p>
+      <div class="partner-pathway">
+        <div class="partner-pathway-label">The exact steps</div>
+        <div class="partner-step"><div class="partner-step-num">01</div><div class="partner-step-text"><strong>Year 1:</strong> Build the Business HQ template publicly and give it away free. Every SME who downloads it becomes a Notion user because of Marketing FM. Track this number obsessively.</div></div>
+        <div class="partner-step"><div class="partner-step-num">02</div><div class="partner-step-text"><strong>Year 2:</strong> Pass the Notion Certified Consultant exam. Cost is approximately $200 USD. This is a credential, not a partnership — but it opens the formal relationship. Submit the Business HQ template to Notion's public gallery.</div></div>
+        <div class="partner-step"><div class="partner-step-num">03</div><div class="partner-step-text"><strong>Year 2:</strong> Reach 1,000 template downloads. This is Notion's internal threshold for taking template creators seriously as partners. At 1,000 downloads you appear in their data — without downloads you do not exist.</div></div>
+        <div class="partner-step"><div class="partner-step-num">04</div><div class="partner-step-text"><strong>Year 3:</strong> Apply to Notion's Ambassador programme. Required: active community, certified status, documented usage, content track record. At this point all four conditions are met.</div></div>
+        <div class="partner-step"><div class="partner-step-num">05</div><div class="partner-step-text"><strong>Year 3–4:</strong> Build the Claude-in-Notion integration — the three-way product. This becomes the flagship partnership story: African SMEs running their businesses inside Notion, powered by Claude, managed through Marketing FM's system.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GOOGLE -->
+  <div class="partner-block">
+    <div class="partner-header">
+      <div class="partner-icon" style="background:#f0ede6; font-size:20px;">🔍</div>
+      <div>
+        <div class="partner-name">Google</div>
+        <div class="partner-type">Google for Startups Africa · Workspace ecosystem · SME digitisation</div>
+      </div>
+      <div class="partner-year">Year 3</div>
+    </div>
+    <div class="partner-body">
+      <p>Google for Startups Africa actively backs entrepreneurs with cloud credits, mentorship, and visibility — but the selection criterion is demonstrated traction, not early-stage promise. They want to accelerate businesses that are already moving, not fund businesses that are trying to start. This is why Year 3 is the right entry point.</p>
+      <p>What they offer you: Google Cloud credits (significant reduction in SaaS infrastructure costs), access to Google's African market network, and the Google badge — which makes every enterprise sales conversation and every subsequent partnership conversation significantly easier.</p>
+      <div class="partner-pathway">
+        <div class="partner-pathway-label">The exact steps</div>
+        <div class="partner-step"><div class="partner-step-num">01</div><div class="partner-step-text"><strong>Year 1–2:</strong> Use Google Workspace products visibly and publicly. Google for Startups is more receptive to applicants already in their ecosystem — Workspace, Google Sheets, Google Forms, Google Meet.</div></div>
+        <div class="partner-step"><div class="partner-step-num">02</div><div class="partner-step-text"><strong>Year 2:</strong> Apply to Google Hustle Academy as a training partner or collaborator. This puts Marketing FM inside Google's African SME training network at a lower threshold than the Startups programme.</div></div>
+        <div class="partner-step"><div class="partner-step-num">03</div><div class="partner-step-text"><strong>Year 3:</strong> Apply to Google for Startups Africa with: 1,000 SMEs served, job creation data, East Africa expansion, and a SaaS product with paying users. These are the criteria their selection team evaluates.</div></div>
+        <div class="partner-step"><div class="partner-step-num">04</div><div class="partner-step-text"><strong>Year 3–4:</strong> The "set up workspaces in Kenya" vision — Google funding SME workspace setup through Marketing FM as the implementation partner — is a Year 4 conversation, once Google for Startups has validated the model.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HORMOZI -->
+  <div class="partner-block">
+    <div class="partner-header">
+      <div class="partner-icon" style="background:#f0ede6; font-size:20px;">📈</div>
+      <div>
+        <div class="partner-name">Alex Hormozi</div>
+        <div class="partner-type">Meeting · Not a partnership · Acquisition.com ecosystem</div>
+      </div>
+      <div class="partner-year">Year 4–5</div>
+    </div>
+    <div class="partner-body">
+      <p>Hormozi does not take meetings from people who reach out to him. He meets people who build something he considers worth publicly acknowledging. His team curates case studies for his content — businesses that used his frameworks and reached a scale he considers impressive. The pathway to meeting him is through that curation process.</p>
+      <p>Marketing FM has a structural advantage here that most of his audience does not: you are applying his frameworks in a market he has never operated in, serving a customer profile he has never coached directly. A Kenyan SME operating on the Hormozi Scaling Roadmap, generating KSh 8M/month, run by a 23-year-old founder — that is a story his content team actively wants.</p>
+      <div class="partner-pathway">
+        <div class="partner-pathway-label">The exact steps</div>
+        <div class="partner-step"><div class="partner-step-num">01</div><div class="partner-step-text"><strong>Year 1–3:</strong> Document every Hormozi framework you use, publicly, with real results. Not "I applied the value equation" — "I applied the value equation to a Kenyan pastry business and here is what changed in 30 days." This is the content his team searches for.</div></div>
+        <div class="partner-step"><div class="partner-step-num">02</div><div class="partner-step-text"><strong>Year 3:</strong> Submit Marketing FM as a case study to Acquisition.com directly. Their website has a submission process. The threshold is approximately $1M ARR or a documented transformation story with real numbers.</div></div>
+        <div class="partner-step"><div class="partner-step-num">03</div><div class="partner-step-text"><strong>Year 4:</strong> At KSh 3M/month, engage actively in Hormozi's community channels — Skool, YouTube comments, his events. Build a track record of substantive, documented contributions. His team notices people who show up consistently with real results.</div></div>
+        <div class="partner-step"><div class="partner-step-num">04</div><div class="partner-step-text"><strong>Year 4–5:</strong> The meeting happens. It is not scheduled through an assistant. It is the result of three years of public building in his framework, documented results that his team found interesting, and being in the right room at the right time.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RORY -->
+  <div class="partner-block">
+    <div class="partner-header">
+      <div class="partner-icon" style="background:#f0ede6; font-size:20px;">🧠</div>
+      <div>
+        <div class="partner-name">Rory Sutherland</div>
+        <div class="partner-type">Meeting · Ogilvy · Behavioural economics in African context</div>
+      </div>
+      <div class="partner-year">Year 3–4</div>
+    </div>
+    <div class="partner-body">
+      <p>Rory Sutherland is more accessible than any other person on this list. He genuinely engages with interesting ideas on X and LinkedIn. He responds to people who send him real research. He has cited obscure bloggers and small researchers in his talks when they offered him a genuinely new angle. The pathway to him is the shortest of all five targets — probably 18–24 months if the right content is built.</p>
+      <p>The angle that gets his attention: behavioural economics as applied to African micro-businesses. Rory's entire intellectual project is about how psychology drives economic decisions that conventional economics cannot explain. African SME behaviour — the M-Pesa psychology, the credit normalisation, the trust-based commerce, the word-of-mouth mechanics — is a goldmine of exactly the kind of irrational but logical behaviour he writes about. Nobody is studying this through his lens. That gap is the opportunity.</p>
+      <div class="partner-pathway">
+        <div class="partner-pathway-label">The exact steps</div>
+        <div class="partner-step"><div class="partner-step-num">01</div><div class="partner-step-text"><strong>Year 1:</strong> Start writing a newsletter or LinkedIn series called something like "The Irrational Kenyan Business." Apply Rory's framework — obliquity, psycho-logic, signalling — to real Kenyan SME behaviour. One piece per week. This costs nothing.</div></div>
+        <div class="partner-step"><div class="partner-step-num">02</div><div class="partner-step-text"><strong>Year 2:</strong> Turn the best pieces into a short research document. Real data from Marketing FM's community — how Kenyan SMEs actually make pricing decisions, why they resist tracking data, what actually drives referrals. Publish it publicly as a PDF.</div></div>
+        <div class="partner-step"><div class="partner-step-num">03</div><div class="partner-step-text"><strong>Year 3:</strong> Send Rory the research directly on X with a single sentence: "I've been applying your framework to Kenyan micro-businesses — I think you'll find this surprising." No pitch. No ask. Just the link and the reason it might interest him.</div></div>
+        <div class="partner-step"><div class="partner-step-num">04</div><div class="partner-step-text"><strong>Year 3–4:</strong> The conversation happens. His interest in the African behavioural data leads to a public acknowledgement — a retweet, a mention in a talk, a citation in a piece. That acknowledgement is the Ogilvy connection made visible.</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- THE REAL NUMBERS -->
+<div class="section">
+  <div class="section-rule">
+    <div class="section-rule-num">Part III</div>
+    <div class="section-rule-line"></div>
+  </div>
+  <div class="section-title">How much work, really</div>
+  <p class="section-sub">The honest accounting of what five years of this actually requires.</p>
+
+  <div class="numbers-grid">
+    <div class="number-card">
+      <span class="number-val">1,825</span>
+      <span class="number-label">Days of work</span>
+    </div>
+    <div class="number-card">
+      <span class="number-val">~5,000</span>
+      <span class="number-label">Pieces of content</span>
+    </div>
+    <div class="number-card">
+      <span class="number-val">260</span>
+      <span class="number-label">Podcast episodes</span>
+    </div>
+    <div class="number-card">
+      <span class="number-val">10,000+</span>
+      <span class="number-label">SMEs to serve</span>
+    </div>
+    <div class="number-card">
+      <span class="number-val">~8–10</span>
+      <span class="number-label">Hrs daily, Years 1–2</span>
+    </div>
+    <div class="number-card">
+      <span class="number-val">KSh 0</span>
+      <span class="number-label">External funding needed</span>
+    </div>
+  </div>
+
+  <table class="truth-table">
+    <thead>
+      <tr>
+        <th>Year</th>
+        <th>Daily work hours</th>
+        <th>Direct cost</th>
+        <th>The hardest part</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Year 1</td>
+        <td>8–10 hrs, solo, every day</td>
+        <td>Under KSh 30,000</td>
+        <td>Building in public with no audience for 4 months before anything moves</td>
+      </tr>
+      <tr>
+        <td>Year 2</td>
+        <td>8–10 hrs but with 2 people helping</td>
+        <td>KSh 180,000–250,000</td>
+        <td>Making the first hire when revenue feels uncertain and managing someone for the first time</td>
+      </tr>
+      <tr>
+        <td>Year 3</td>
+        <td>6–8 hrs, shifting to management</td>
+        <td>KSh 500,000–900,000</td>
+        <td>Expanding to a new country while keeping the Kenyan operation performing</td>
+      </tr>
+      <tr>
+        <td>Year 4</td>
+        <td>5–6 hrs strategic work</td>
+        <td>KSh 1.2M–2M</td>
+        <td>Letting go of delivery and trusting the team — the E-Myth transition that most founders fail</td>
+      </tr>
+      <tr>
+        <td>Year 5</td>
+        <td>4–5 hrs, Entrepreneur mode only</td>
+        <td>KSh 2M–4M</td>
+        <td>Staying strategic when the business is big enough to pull you back into operations</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="callout rust" style="margin-top:24px;">
+    <p><strong>The thing that kills most plans like this is not the cost and not the work — it is the 4-month dead zone in Year 1.</strong> You will post content, coach clients, build tools, and share the podcast for 90–120 days and see almost no visible external response. The community will be quiet. The downloads will be low. The revenue will feel fragile. This is not failure. This is what every compounding business looks like before the compound kicks in. The founders who get to Year 3 are the ones who did not interpret the dead zone as a signal to stop or pivot. They interpreted it as the price of entry and kept building.</p>
+  </div>
+
+  <div class="callout teal" style="margin-top:12px;">
+    <p><strong>The free stuff question — yes, a lot of it.</strong> In Year 1 and Year 2, approximately 80% of what Marketing FM produces is free. Free tools. Free podcast. Free WhatsApp content. Free Notion templates. This is not charity — it is audience-building, which is the asset that makes every other thing on this list possible. The partnerships, the SaaS revenue, the cohort fees, the sponsorships — all of it flows through an audience that trusts Marketing FM. You cannot buy that trust. You build it, one free useful thing at a time, until the people who receive it decide they want to pay for what comes next.</p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="footer-brand">Marketing FM — Internal</div>
+  <div class="footer-note">5-Year Partnership Pathway · Karl Mutua · 2026</div>
+</div>
+
+</div>
+</body>
+</html>
